@@ -75,6 +75,12 @@ textarea {
     resize: vertical;
 }
 
+
+h3 {
+     font-weight: 200;
+
+}
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -94,50 +100,179 @@ textarea {
 html {
   background-color: #ffffff;
   height: 100%;
+  width: 100%;
+  display: flex;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
   font-size: 1.25em;
-  height: 100%;
+  height: auto;
+  background-color: #000000;
+  padding-left: 100px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+
+
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   display:flex;
-  justify-content: space-between;
-  background-color: #000000;
+  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  height: 500px;
+  height: auto;
   margin: 0px;
+  color: #ffffff;
+
+
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #ffffff;
-  line-height: 1.5em;
-  font-size: 1em;
+header, main, footer {
+
+  display: flex;
+  flex-flow: row wrap;
+
+
+  }
+
+
+header {
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: 4em;
   height: auto;
-  width: 30%;
-  display:flex;
+  flex-flow: row wrap;
+
+}
+
+
+main {
+
+  justify-content: flex-start;
+  flex-flow: row wrap;
+
+  font-size: 1.5em;
+  height: auto;
+
+
+  border-style: solid;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  
+  border-bottom-width: 1px;
+
+  
+  padding-bottom: 50px;
+
+
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+
+}
+
+
+.grid{
+
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 
-  padding: 20px 30px 20px 20px;
-  font-weight: 300;
 
 }
 
+
+
+.div-1, .div-2, .div-3 {
+  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+  
+  
+  color: #ffffff;
+  line-height: 1.5em;
+  font-size: 1.25em;
+  height: auto;
+  width: 30%;
+  display:flex;
+  align-items: center;
+
+  padding: 0px 10px 20px 0px;
+  font-weight: 300;
+
+
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+
+
+}
+
+
  .div-1, .div-2 {
       border-right: 1px solid #555;
-     
-    
+
     }
 
 
+.div-2, .div-3 {
 
+  padding-left: 50px;
+
+
+}
+
+
+footer {
+
+  width: 100%;
+
+  justify-content: flex-start;
+
+
+  height: auto;
+
+  border-style: solid;
+
+  border-top-width: 1px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  
+  padding-top: 20px;
+  margin-top: 50px;
+
+
+
+}
+
+ul {
+
+  margin-left: -35px;
+
+}
+
+
+ul li {
+  justify-content: flex-start;
+  display: inline;
+
+
+}
+
+li {
+padding-right: 10px;
+justify-content: flex-start;
+}
 
 
 
